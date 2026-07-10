@@ -4,379 +4,62 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Your Appliance Store | Freezers, TVs & Electronics</title>
-  <meta name="description" content="Shop reliable freezers, TVs, and home appliances. Browse products and contact us on WhatsApp for prices and availability." />
+  <title>Ben Home Appliance | Quality Appliances for Every Home</title>
+  <meta name="description" content="Ben Home Appliance online store for freezers, refrigerators, TVs, washing machines, air conditioners, and home appliances. Choose English, French, or Ewe." />
   <style>
-    :root {
-      --primary: #243b80;
-      --secondary: #5b7cff;
-      --accent: #00bcd4;
-      --dark: #101828;
-      --text: #344054;
-      --light: #f7f9fc;
-      --white: #ffffff;
-      --border: #e4e7ec;
-    }
-
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      line-height: 1.6;
-      color: var(--text);
-      background: var(--white);
-    }
-
-    a { text-decoration: none; color: inherit; }
-
-    header {
-      position: sticky;
-      top: 0;
-      z-index: 10;
-      background: rgba(255, 255, 255, 0.95);
-      border-bottom: 1px solid var(--border);
-      backdrop-filter: blur(10px);
-    }
-
-    .container {
-      width: min(1120px, 92%);
-      margin: 0 auto;
-    }
-
-    .nav {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 18px 0;
-    }
-
-    .logo {
-      font-size: 1.35rem;
-      font-weight: 800;
-      color: var(--primary);
-    }
-
-    .nav-links {
-      display: flex;
-      gap: 24px;
-      font-weight: 600;
-      font-size: 0.95rem;
-    }
-
-    .hero {
-      background: linear-gradient(135deg, #eef3ff 0%, #ffffff 55%, #e9fbff 100%);
-      padding: 80px 0 60px;
-    }
-
-    .hero-grid {
-      display: grid;
-      grid-template-columns: 1.05fr 0.95fr;
-      gap: 44px;
-      align-items: center;
-    }
-
-    .badge {
-      display: inline-flex;
-      background: #e7f8fb;
-      color: #087083;
-      padding: 8px 14px;
-      border-radius: 999px;
-      font-weight: 700;
-      margin-bottom: 18px;
-      font-size: 0.9rem;
-    }
-
-    h1 {
-      font-size: clamp(2.4rem, 5vw, 4.6rem);
-      line-height: 1.05;
-      color: var(--dark);
-      margin-bottom: 20px;
-      letter-spacing: -1.5px;
-    }
-
-    .hero p {
-      font-size: 1.15rem;
-      max-width: 620px;
-      margin-bottom: 28px;
-    }
-
-    .buttons {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 14px;
-    }
-
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      padding: 14px 22px;
-      border-radius: 12px;
-      font-weight: 800;
-      transition: 0.2s ease;
-    }
-
-    .btn-primary {
-      background: var(--primary);
-      color: var(--white);
-    }
-
-    .btn-secondary {
-      background: var(--white);
-      color: var(--primary);
-      border: 1px solid var(--border);
-    }
-
-    .btn:hover { transform: translateY(-2px); }
-
-    .hero-card {
-      background: var(--white);
-      border-radius: 24px;
-      padding: 18px;
-      box-shadow: 0 24px 70px rgba(36, 59, 128, 0.18);
-      border: 1px solid var(--border);
-    }
-
-    .hero-card img {
-      width: 100%;
-      border-radius: 18px;
-      display: block;
-      object-fit: cover;
-    }
-
-    section { padding: 72px 0; }
-
-    .section-title {
-      text-align: center;
-      max-width: 720px;
-      margin: 0 auto 42px;
-    }
-
-    .section-title h2 {
-      color: var(--dark);
-      font-size: clamp(2rem, 4vw, 3rem);
-      margin-bottom: 12px;
-    }
-
-    .features {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 22px;
-    }
-
-    .feature, .product, .contact-card {
-      background: var(--white);
-      border: 1px solid var(--border);
-      border-radius: 20px;
-      padding: 24px;
-      box-shadow: 0 10px 30px rgba(16, 24, 40, 0.06);
-    }
-
-    .feature h3, .product h3 { color: var(--dark); margin-bottom: 8px; }
-
-    .feature-icon {
-      width: 44px;
-      height: 44px;
-      border-radius: 12px;
-      background: linear-gradient(135deg, var(--secondary), var(--accent));
-      margin-bottom: 16px;
-    }
-
-    .products { background: var(--light); }
-
-    .product-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 22px;
-    }
-
-    .product { padding: 16px; overflow: hidden; }
-
-    .product img {
-      width: 100%;
-      height: 250px;
-      object-fit: cover;
-      border-radius: 16px;
-      margin-bottom: 16px;
-      background: #eee;
-    }
-
-    .tag {
-      display: inline-block;
-      background: #eef3ff;
-      color: var(--primary);
-      padding: 6px 10px;
-      border-radius: 999px;
-      font-weight: 800;
-      font-size: 0.82rem;
-      margin-bottom: 10px;
-    }
-
-    .product ul {
-      margin: 12px 0 18px 18px;
-      font-size: 0.95rem;
-    }
-
-    .about-grid, .contact-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 36px;
-      align-items: center;
-    }
-
-    .about-box {
-      background: linear-gradient(135deg, var(--primary), #516eea);
-      color: var(--white);
-      padding: 36px;
-      border-radius: 24px;
-    }
-
-    .about-box h2 { font-size: 2.2rem; margin-bottom: 14px; }
-
-    .contact { background: var(--dark); color: var(--white); }
-    .contact h2 { color: var(--white); }
-    .contact p { color: #d0d5dd; }
-    .contact-card { background: #1d2939; border-color: #344054; }
-    .contact-card strong { color: var(--white); }
-
-    footer {
-      background: #0b1220;
-      color: #d0d5dd;
-      text-align: center;
-      padding: 24px;
-    }
-
-    @media (max-width: 900px) {
-      .hero-grid, .about-grid, .contact-grid { grid-template-columns: 1fr; }
-      .features { grid-template-columns: 1fr; }
-      .product-grid { grid-template-columns: repeat(2, 1fr); }
-      .nav-links { display: none; }
-    }
-
-    @media (max-width: 560px) {
-      .product-grid { grid-template-columns: 1fr; }
-      .hero { padding-top: 56px; }
-    }
+    :root{--blue:#0057ff;--purple:#5b21ff;--cyan:#00c8ff;--orange:#ff8a00;--yellow:#ffd23f;--green:#16a34a;--red:#ef4444;--dark:#0f172a;--text:#344054;--muted:#667085;--light:#f6f9ff;--white:#fff;--border:#e5e7eb;--shadow:0 18px 45px rgba(15,23,42,.12)}
+    *{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{font-family:Arial,Helvetica,sans-serif;color:var(--text);background:var(--white);line-height:1.65}a{text-decoration:none;color:inherit}.container{width:min(1180px,92%);margin:auto}.topbar{background:var(--dark);color:white;font-size:.92rem}.topbar .container{display:flex;justify-content:space-between;gap:16px;padding:8px 0;flex-wrap:wrap}.topbar strong{color:var(--yellow)}
+    header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.94);border-bottom:1px solid var(--border);backdrop-filter:blur(12px)}.nav{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:14px 0}.brand{display:flex;align-items:center;gap:10px;font-weight:900;color:var(--dark);font-size:1.2rem}.brand-mark{width:42px;height:42px;border-radius:14px;background:linear-gradient(135deg,var(--orange),var(--blue),var(--purple));display:grid;place-items:center;color:white;font-weight:900;box-shadow:0 12px 24px rgba(91,33,255,.25)}.nav-links{display:flex;gap:20px;font-weight:800;font-size:.94rem}.nav-links a:hover{color:var(--blue)}.right-nav{display:flex;align-items:center;gap:10px}.language-select{border:2px solid #d7ddff;border-radius:999px;padding:9px 12px;font-weight:800;background:white;color:var(--blue)}
+    .hero{background:radial-gradient(circle at 78% 10%,rgba(255,210,63,.5),transparent 30%),radial-gradient(circle at 20% 88%,rgba(0,200,255,.35),transparent 28%),linear-gradient(135deg,#4616d9 0%,#0057ff 58%,#00c8ff 100%);color:white;padding:72px 0 64px;overflow:hidden}.hero-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:42px;align-items:center}.badge{display:inline-flex;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.28);padding:9px 15px;border-radius:999px;font-weight:900;margin-bottom:18px}.hero h1{font-size:clamp(2.35rem,5vw,4.75rem);line-height:1.02;margin-bottom:20px;letter-spacing:-1.7px}.hero p{font-size:1.18rem;max-width:650px;margin-bottom:28px;color:#eef8ff}.buttons{display:flex;flex-wrap:wrap;gap:14px}.btn{display:inline-flex;align-items:center;justify-content:center;padding:14px 20px;border-radius:14px;font-weight:900;transition:.2s ease;border:0;cursor:pointer}.btn:hover{transform:translateY(-2px)}.btn-primary{background:var(--orange);color:#101828;box-shadow:0 12px 24px rgba(255,138,0,.35)}.btn-secondary{background:white;color:var(--purple)}.btn-green{background:var(--green);color:white;width:100%}.hero-card{background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.26);border-radius:30px;padding:18px;box-shadow:0 28px 80px rgba(15,23,42,.22)}.hero-card img{width:100%;height:520px;border-radius:22px;display:block;object-fit:cover}.trust-strip{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:26px}.trust-strip div{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.2);border-radius:16px;padding:14px;font-weight:900;color:#fff}
+    section{padding:76px 0}.section-title{text-align:center;max-width:820px;margin:0 auto 42px}.section-title h2{color:var(--dark);font-size:clamp(2rem,4vw,3.25rem);line-height:1.08;margin-bottom:12px;letter-spacing:-1px}.section-title p{font-size:1.06rem;color:var(--muted)}.features{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.feature,.product,.contact-card,.promise{background:white;border:1px solid var(--border);border-radius:24px;padding:24px;box-shadow:var(--shadow)}.feature h3,.product h3,.promise h3{color:var(--dark);margin-bottom:8px}.feature-icon{width:50px;height:50px;border-radius:16px;background:linear-gradient(135deg,var(--purple),var(--cyan),var(--orange));margin-bottom:16px}.products{background:linear-gradient(180deg,#fff 0%,#f2f7ff 100%)}.product-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}.product{padding:16px;display:flex;flex-direction:column;overflow:hidden}.product img{width:100%;height:245px;object-fit:cover;border-radius:18px;margin-bottom:16px;background:#eef3ff}.tag{display:inline-block;background:#eef2ff;color:var(--purple);padding:6px 10px;border-radius:999px;font-weight:900;font-size:.82rem;margin-bottom:10px;align-self:flex-start}.price{margin:12px 0 16px;padding:10px 12px;border-radius:12px;background:#fff7e6;border:1px dashed #f59e0b;color:#8a5400;font-weight:900}.product ul{margin:10px 0 16px 18px;font-size:.95rem;flex:1}.product p{flex:1}.promise-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.about-grid,.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:center}.about-box{background:linear-gradient(135deg,var(--purple),var(--blue));color:white;padding:36px;border-radius:28px;box-shadow:0 22px 50px rgba(91,33,255,.22)}.about-box h2{font-size:2.2rem;margin-bottom:14px}.about-box p{color:#edf5ff}.promo{background:linear-gradient(135deg,#0f172a,#162a55);color:white}.promo h2{color:white}.promo p{color:#d8e2f3}.contact{background:#07111f;color:white}.contact h2{color:white}.contact p{color:#d0d5dd}.contact-card{background:#101828;border-color:#26364f}.contact-card strong{color:white}.contact-list{display:grid;gap:14px}.contact-item{padding:16px;border-radius:16px;background:#0b1627;border:1px solid #26364f}.footer{background:#040912;color:#d0d5dd;text-align:center;padding:26px}.footer strong{color:white}
+    @media(max-width:1000px){.hero-grid,.about-grid,.contact-grid{grid-template-columns:1fr}.product-grid{grid-template-columns:repeat(2,1fr)}.features,.promise-grid{grid-template-columns:1fr}.hero-card img{height:420px}.nav-links{display:none}.trust-strip{grid-template-columns:1fr}}
+    @media(max-width:560px){.product-grid{grid-template-columns:1fr}.hero{padding-top:52px}.hero-card img{height:340px}.right-nav{width:100%;justify-content:space-between}.nav{flex-wrap:wrap}.topbar .container{display:block}.brand{font-size:1rem}}
   </style>
 </head>
 <body>
-  <header>
-    <div class="container nav">
-      <div class="logo">Your Appliance Store</div>
-      <nav class="nav-links">
-        <a href="#products">Products</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </div>
-  </header>
-
+  <div class="topbar"><div class="container"><span data-i18n="topOffer">New arrivals available now — ask for today’s best price.</span><span><strong data-i18n="topContact">Call / WhatsApp:</strong> <span>+000 000 000 000</span></span></div></div>
+  <header><div class="container nav"><a class="brand" href="#"><span class="brand-mark">BH</span><span data-i18n="storeName">Ben Home Appliance</span></a><nav class="nav-links"><a href="#products" data-i18n="navProducts">Products</a><a href="#categories" data-i18n="navCategories">Categories</a><a href="#why" data-i18n="navWhy">Why Us</a><a href="#contact" data-i18n="navContact">Contact</a></nav><div class="right-nav"><select class="language-select" id="languageSelect" aria-label="Choose language"><option value="en">English</option><option value="fr">Français</option><option value="ee">Eʋegbe</option></select></div></div></header>
   <main>
-    <section class="hero">
-      <div class="container hero-grid">
-        <div>
-          <span class="badge">Freezers • TVs • Home Appliances</span>
-          <h1>Quality appliances for your home and business.</h1>
-          <p>Discover reliable freezers, televisions, and electronics at great value. Browse our products online and contact us quickly for prices, availability, and delivery options.</p>
-          <div class="buttons">
-            <a class="btn btn-primary" href="#products">View Products</a>
-            <a class="btn btn-secondary" href="https://wa.me/000000000000" target="_blank" rel="noopener">Contact on WhatsApp</a>
-          </div>
-        </div>
-        <div class="hero-card">
-          <img src="assets/freezer-200l.jpg" alt="Boch 200L chest freezer" />
-        </div>
-      </div>
-    </section>
+    <section class="hero"><div class="container hero-grid"><div><span class="badge" data-i18n="badge">Freezers • TVs • Refrigerators • Home Appliances</span><h1 data-i18n="heroTitle">Upgrade your home with quality appliances you can trust.</h1><p data-i18n="heroText">At Ben Home Appliance, customers find reliable freezers and home appliances at prices that make sense. Browse online, choose what you need, and contact us for the latest price before visiting the store.</p><div class="buttons"><a class="btn btn-primary" href="#products" data-i18n="viewProducts">Shop Featured Products</a><a class="btn btn-secondary" href="https://wa.me/000000000000" target="_blank" rel="noopener" data-i18n="whatsapp">Contact on WhatsApp</a></div><div class="trust-strip"><div data-i18n="trust1">Quality products</div><div data-i18n="trust2">Affordable prices</div><div data-i18n="trust3">Friendly local service</div></div></div><div class="hero-card"><img src="assets/freezer-708l.jpg" alt="Large Boch commercial chest freezer at Ben Home Appliance" /></div></div></section>
 
-    <section>
-      <div class="container">
-        <div class="section-title">
-          <h2>Why customers choose us</h2>
-          <p>We make it easier for customers to find the right appliances, compare options, and contact the store before visiting.</p>
-        </div>
-        <div class="features">
-          <div class="feature"><div class="feature-icon"></div><h3>Reliable products</h3><p>We offer practical appliances suitable for homes, shops, restaurants, and small businesses.</p></div>
-          <div class="feature"><div class="feature-icon"></div><h3>Easy product browsing</h3><p>Customers can view available models and request more details directly from their phone.</p></div>
-          <div class="feature"><div class="feature-icon"></div><h3>Trusted local service</h3><p>A professional online presence helps customers feel confident before they buy.</p></div>
-        </div>
-      </div>
-    </section>
+    <section id="why"><div class="container"><div class="section-title"><h2 data-i18n="whyTitle">Why shop at Ben Home Appliance?</h2><p data-i18n="whyText">We help families, shops, restaurants, and businesses find appliances that are practical, durable, and ready for everyday use.</p></div><div class="features"><div class="feature"><div class="feature-icon"></div><h3 data-i18n="feature1Title">Products for every need</h3><p data-i18n="feature1Text">From compact home freezers to large business storage, customers can find the right size and model.</p></div><div class="feature"><div class="feature-icon"></div><h3 data-i18n="feature2Title">Buy with confidence</h3><p data-i18n="feature2Text">Clear photos, descriptions, and direct contact make it easier to choose before coming to the store.</p></div><div class="feature"><div class="feature-icon"></div><h3 data-i18n="feature3Title">Fast customer support</h3><p data-i18n="feature3Text">Ask for prices, availability, delivery options, and promotions directly through WhatsApp.</p></div></div></div></section>
 
-    <section id="products" class="products">
-      <div class="container">
-        <div class="section-title">
-          <h2>Featured freezers</h2>
-          <p>Fast-freezing chest freezers available in multiple sizes for personal and business use.</p>
-        </div>
-        <div class="product-grid">
-          <article class="product">
-            <img src="assets/freezer-99l.jpg" alt="Boch RCF-120 99L freezer" />
-            <span class="tag">RCF-120 / 99L</span>
-            <h3>Compact Chest Freezer</h3>
-            <ul><li>Fast freezing</li><li>Low energy consumption</li><li>Ideal for small spaces</li></ul>
-            <a class="btn btn-primary" href="https://wa.me/000000000000" target="_blank" rel="noopener">Ask for Price</a>
-          </article>
-          <article class="product">
-            <img src="assets/freezer-145l.jpg" alt="Boch RCF-180 145L freezer" />
-            <span class="tag">RCF-180 / 145L</span>
-            <h3>Medium Chest Freezer</h3>
-            <ul><li>Deep freezing performance</li><li>Lock and key</li><li>Great for family use</li></ul>
-            <a class="btn btn-primary" href="https://wa.me/000000000000" target="_blank" rel="noopener">Ask for Price</a>
-          </article>
-          <article class="product">
-            <img src="assets/freezer-200l.jpg" alt="Boch RCF-230 200L freezer" />
-            <span class="tag">RCF-230 / 200L</span>
-            <h3>Large Chest Freezer</h3>
-            <ul><li>Large storage capacity</li><li>Tropical design</li><li>Good for shops and homes</li></ul>
-            <a class="btn btn-primary" href="https://wa.me/000000000000" target="_blank" rel="noopener">Ask for Price</a>
-          </article>
-          <article class="product">
-            <img src="assets/freezer-708l.jpg" alt="Boch RCF-890 708L freezer" />
-            <span class="tag">RCF-890 / 708L</span>
-            <h3>Commercial Chest Freezer</h3>
-            <ul><li>Extra-large capacity</li><li>Business-ready storage</li><li>Ideal for restaurants and stores</li></ul>
-            <a class="btn btn-primary" href="https://wa.me/000000000000" target="_blank" rel="noopener">Ask for Price</a>
-          </article>
-        </div>
-      </div>
-    </section>
+    <section id="products" class="products"><div class="container"><div class="section-title"><h2 data-i18n="freezerTitle">Featured Boch Chest Freezers</h2><p data-i18n="freezerText">Reliable fast-freezing models for food storage, shops, restaurants, and growing businesses.</p></div><div class="product-grid">
+      <article class="product"><img src="assets/freezer-99l.jpg" alt="Boch RCF-120 99L chest freezer"><span class="tag">RCF-120 / 99L</span><h3 data-i18n="p1Title">Compact Chest Freezer</h3><ul><li data-i18n="fastFreeze">Fast freezing</li><li data-i18n="lowEnergy">Low energy consumption</li><li data-i18n="smallSpace">Perfect for small spaces</li></ul><div class="price" data-i18n="pricePlaceholder">Price: Add here</div><a class="btn btn-green" href="https://wa.me/000000000000" target="_blank" data-i18n="askPrice">Ask for Price</a></article>
+      <article class="product"><img src="assets/freezer-145l.jpg" alt="Boch RCF-180 145L chest freezer"><span class="tag">RCF-180 / 145L</span><h3 data-i18n="p2Title">Medium Chest Freezer</h3><ul><li data-i18n="deepFreeze">Deep freezing performance</li><li data-i18n="lockKey">Lock and key</li><li data-i18n="familyUse">Great for family use</li></ul><div class="price" data-i18n="pricePlaceholder">Price: Add here</div><a class="btn btn-green" href="https://wa.me/000000000000" target="_blank" data-i18n="askPrice">Ask for Price</a></article>
+      <article class="product"><img src="assets/freezer-200l.jpg" alt="Boch RCF-230 200L chest freezer"><span class="tag">RCF-230 / 200L</span><h3 data-i18n="p3Title">Large Chest Freezer</h3><ul><li data-i18n="largeStorage">Large storage capacity</li><li data-i18n="tropicalDesign">Tropical design</li><li data-i18n="shopHome">Good for shops and homes</li></ul><div class="price" data-i18n="pricePlaceholder">Price: Add here</div><a class="btn btn-green" href="https://wa.me/000000000000" target="_blank" data-i18n="askPrice">Ask for Price</a></article>
+      <article class="product"><img src="assets/freezer-708l.jpg" alt="Boch RCF-850 708L commercial chest freezer"><span class="tag">RCF-850 / 708L</span><h3 data-i18n="p4Title">Commercial Chest Freezer</h3><ul><li data-i18n="extraLarge">Extra-large capacity</li><li data-i18n="businessReady">Business-ready storage</li><li data-i18n="restaurants">Ideal for restaurants and stores</li></ul><div class="price" data-i18n="pricePlaceholder">Price: Add here</div><a class="btn btn-green" href="https://wa.me/000000000000" target="_blank" data-i18n="askPrice">Ask for Price</a></article>
+    </div></div></section>
 
-    <section id="about">
-      <div class="container about-grid">
-        <div>
-          <h2>Grow your store with a stronger online presence.</h2>
-          <p>A website is an excellent tool to grow your business, allow more people to discover what you offer, and build greater trust with customers. Today, many people first search for a business online before visiting or making a purchase.</p>
-        </div>
-        <div class="about-box">
-          <h2>More visibility. More trust. More customers.</h2>
-          <p>Show your products, location, contact information, and latest offers in one professional place customers can access anytime.</p>
-        </div>
-      </div>
-    </section>
+    <section id="categories"><div class="container"><div class="section-title"><h2 data-i18n="moreTitle">More appliances available at Ben Home Appliance</h2><p data-i18n="moreText">Explore more products for your home, business, restaurant, office, or shop. Add current prices and availability whenever inventory changes.</p></div>
+      <div class="section-title" style="margin-bottom:24px"><h2 data-i18n="tvSectionTitle">Televisions for every room and every budget</h2><p data-i18n="tvSectionText">Give customers a clear view of available TV options and make it easy for them to ask for the latest price on WhatsApp.</p></div><div class="product-grid">
+      <article class="product"><img src="assets/tv-32-smart.svg" alt="32 inch smart LED television"><span class="tag" data-i18n="catTV">Televisions</span><h3 data-i18n="tv32Title">32” Smart LED TV</h3><p data-i18n="tv32Desc">A compact smart TV that is perfect for bedrooms, small living rooms, offices, and student rooms.</p><div class="price" data-i18n="pricePlaceholder">Price: Add here</div><a class="btn btn-green" href="https://wa.me/000000000000" target="_blank" data-i18n="askPrice">Ask for Price</a></article>
+      <article class="product"><img src="assets/tv-43-smart.svg" alt="43 inch full HD smart television"><span class="tag" data-i18n="catTV">Televisions</span><h3 data-i18n="tv43Title">43” Full HD Smart TV</h3><p data-i18n="tv43Desc">A popular size for families that want clear pictures, streaming apps, and great value.</p><div class="price" data-i18n="pricePlaceholder">Price: Add here</div><a class="btn btn-green" href="https://wa.me/000000000000" target="_blank" data-i18n="askPrice">Ask for Price</a></article>
+      <article class="product"><img src="assets/tv-55-smart.svg" alt="55 inch 4K smart television"><span class="tag" data-i18n="catTV">Televisions</span><h3 data-i18n="tv55Title">55” 4K Smart TV</h3><p data-i18n="tv55Desc">A bigger screen experience for movies, football, gaming, and family entertainment.</p><div class="price" data-i18n="pricePlaceholder">Price: Add here</div><a class="btn btn-green" href="https://wa.me/000000000000" target="_blank" data-i18n="askPrice">Ask for Price</a></article>
+      <article class="product"><img src="assets/tv-65-smart.svg" alt="65 inch premium 4K smart television"><span class="tag" data-i18n="catTV">Televisions</span><h3 data-i18n="tv65Title">65” Premium 4K TV</h3><p data-i18n="tv65Desc">A premium large-screen option for customers who want a cinema-style experience at home.</p><div class="price" data-i18n="pricePlaceholder">Price: Add here</div><a class="btn btn-green" href="https://wa.me/000000000000" target="_blank" data-i18n="askPrice">Ask for Price</a></article>
+      <article class="product"><img src="assets/speaker-placeholder.svg" alt="Sound system placeholder"><span class="tag" data-i18n="catAudio">Audio</span><h3 data-i18n="speakerTitle">Sound Systems</h3><p data-i18n="speakerDesc">Speakers and home theater systems for powerful, clear sound.</p><div class="price" data-i18n="pricePlaceholder">Price: Add here</div><a class="btn btn-green" href="https://wa.me/000000000000" target="_blank" data-i18n="askPrice">Ask for Price</a></article>
+      <article class="product"><img src="assets/fridge-placeholder.svg" alt="Refrigerator placeholder"><span class="tag" data-i18n="catFridge">Refrigerators</span><h3 data-i18n="fridgeTitle">Refrigerators</h3><p data-i18n="fridgeDesc">Reliable refrigerators for homes, stores, restaurants, and small businesses.</p><div class="price" data-i18n="pricePlaceholder">Price: Add here</div><a class="btn btn-green" href="https://wa.me/000000000000" target="_blank" data-i18n="askPrice">Ask for Price</a></article>
+      <article class="product"><img src="assets/washing-placeholder.svg" alt="Washing machine placeholder"><span class="tag" data-i18n="catLaundry">Laundry</span><h3 data-i18n="washTitle">Washing Machines</h3><p data-i18n="washDesc">Practical washing machines that save time and make laundry easier.</p><div class="price" data-i18n="pricePlaceholder">Price: Add here</div><a class="btn btn-green" href="https://wa.me/000000000000" target="_blank" data-i18n="askPrice">Ask for Price</a></article>
+      <article class="product"><img src="assets/cooker-placeholder.svg" alt="Cooker placeholder"><span class="tag" data-i18n="catKitchen">Kitchen</span><h3 data-i18n="cookerTitle">Cookers & Ovens</h3><p data-i18n="cookerDesc">Kitchen appliances for easy, clean, and efficient cooking every day.</p><div class="price" data-i18n="pricePlaceholder">Price: Add here</div><a class="btn btn-green" href="https://wa.me/000000000000" target="_blank" data-i18n="askPrice">Ask for Price</a></article>
+      <article class="product"><img src="assets/ac-placeholder.svg" alt="Air conditioner placeholder"><span class="tag" data-i18n="catCooling">Cooling</span><h3 data-i18n="acTitle">Air Conditioners</h3><p data-i18n="acDesc">Cooling solutions for homes, shops, offices, and comfortable living spaces.</p><div class="price" data-i18n="pricePlaceholder">Price: Add here</div><a class="btn btn-green" href="https://wa.me/000000000000" target="_blank" data-i18n="askPrice">Ask for Price</a></article>
+    </div></div></section>
 
-    <section id="contact" class="contact">
-      <div class="container contact-grid">
-        <div>
-          <h2>Contact us today</h2>
-          <p>Have a question about price, availability, or delivery? Reach out and our team will respond as soon as possible.</p>
-          <div class="buttons" style="margin-top: 24px;">
-            <a class="btn btn-primary" href="https://wa.me/000000000000" target="_blank" rel="noopener">WhatsApp Us</a>
-            <a class="btn btn-secondary" href="tel:+000000000000">Call Now</a>
-          </div>
-        </div>
-        <div class="contact-card">
-          <p><strong>Store Name:</strong> Your Appliance Store</p>
-          <p><strong>Phone/WhatsApp:</strong> +000 000 000 000</p>
-          <p><strong>Location:</strong> Add your store address here</p>
-          <p><strong>Hours:</strong> Monday - Saturday, 8:00 AM - 6:00 PM</p>
-        </div>
-      </div>
-    </section>
+    <section><div class="container"><div class="section-title"><h2 data-i18n="promiseTitle">Our customer promise</h2><p data-i18n="promiseText">Every customer matters. Every purchase matters. Every home deserves dependable appliances.</p></div><div class="promise-grid"><div class="promise"><h3 data-i18n="promise1Title">Honest guidance</h3><p data-i18n="promise1Text">We help you choose the product that fits your budget, space, and purpose.</p></div><div class="promise"><h3 data-i18n="promise2Title">Trusted quality</h3><p data-i18n="promise2Text">We focus on appliances designed for strong performance and long-lasting value.</p></div><div class="promise"><h3 data-i18n="promise3Title">Easy contact</h3><p data-i18n="promise3Text">Use WhatsApp, phone, or visit the store to get quick answers and current prices.</p></div></div></div></section>
+
+    <section id="about" class="promo"><div class="container about-grid"><div><h2 data-i18n="aboutTitle">A professional online store that attracts more customers.</h2><p data-i18n="aboutText">Today, many customers search online before visiting a store. This website helps Ben Home Appliance show products, build confidence, and turn online visitors into real buyers.</p></div><div class="about-box"><h2 data-i18n="boxTitle">More visibility. More trust. More sales.</h2><p data-i18n="boxText">Display products, prices, promotions, location, WhatsApp contact, and store hours in one clean and professional place.</p></div></div></section>
+
+    <section id="contact" class="contact"><div class="container contact-grid"><div><h2 data-i18n="contactTitle">Ready to upgrade your home?</h2><p data-i18n="contactText">Contact Ben Home Appliance today for price, availability, delivery options, new arrivals, and special offers.</p><div class="buttons" style="margin-top:24px"><a class="btn btn-primary" href="https://wa.me/000000000000" target="_blank" data-i18n="whatsappUs">WhatsApp Us</a><a class="btn btn-secondary" href="tel:+000000000000" data-i18n="callNow">Call Now</a></div></div><div class="contact-card"><div class="contact-list"><div class="contact-item"><strong data-i18n="storeLabel">Store Name:</strong> <span>Ben Home Appliance</span></div><div class="contact-item"><strong data-i18n="phoneLabel">Phone/WhatsApp:</strong> <span>+000 000 000 000</span></div><div class="contact-item"><strong data-i18n="locationLabel">Location:</strong> <span data-i18n="locationText">Add your store address here</span></div><div class="contact-item"><strong data-i18n="hoursLabel">Hours:</strong> <span data-i18n="hoursText">Monday - Saturday, 8:00 AM - 6:00 PM</span></div></div></div></div></section>
   </main>
+  <footer class="footer"><p><strong>Ben Home Appliance</strong> — <span data-i18n="footerText">Quality you can trust. Prices you will love.</span></p><p data-i18n="footer">© 2026 Ben Home Appliance. All rights reserved.</p></footer>
 
-  <footer>
-    <p>© 2026 Your Appliance Store. All rights reserved.</p>
-  </footer>
+  <script>
+    const translations = {
+      en:{topOffer:'New arrivals available now — ask for today’s best price.',topContact:'Call / WhatsApp:',storeName:'Ben Home Appliance',navProducts:'Products',navCategories:'Categories',navWhy:'Why Us',navContact:'Contact',badge:'Freezers • TVs • Refrigerators • Home Appliances',heroTitle:'Upgrade your home with quality appliances you can trust.',heroText:'At Ben Home Appliance, customers find reliable freezers and home appliances at prices that make sense. Browse online, choose what you need, and contact us for the latest price before visiting the store.',viewProducts:'Shop Featured Products',whatsapp:'Contact on WhatsApp',trust1:'Quality products',trust2:'Affordable prices',trust3:'Friendly local service',whyTitle:'Why shop at Ben Home Appliance?',whyText:'We help families, shops, restaurants, and businesses find appliances that are practical, durable, and ready for everyday use.',feature1Title:'Products for every need',feature1Text:'From compact home freezers to large business storage, customers can find the right size and model.',feature2Title:'Buy with confidence',feature2Text:'Clear photos, descriptions, and direct contact make it easier to choose before coming to the store.',feature3Title:'Fast customer support',feature3Text:'Ask for prices, availability, delivery options, and promotions directly through WhatsApp.',freezerTitle:'Featured Boch Chest Freezers',freezerText:'Reliable fast-freezing models for food storage, shops, restaurants, and growing businesses.',p1Title:'Compact Chest Freezer',p2Title:'Medium Chest Freezer',p3Title:'Large Chest Freezer',p4Title:'Commercial Chest Freezer',fastFreeze:'Fast freezing',lowEnergy:'Low energy consumption',smallSpace:'Perfect for small spaces',deepFreeze:'Deep freezing performance',lockKey:'Lock and key',familyUse:'Great for family use',largeStorage:'Large storage capacity',tropicalDesign:'Tropical design',shopHome:'Good for shops and homes',extraLarge:'Extra-large capacity',businessReady:'Business-ready storage',restaurants:'Ideal for restaurants and stores',pricePlaceholder:'Price: Add here',askPrice:'Ask for Price',moreTitle:'More appliances available at Ben Home Appliance',moreText:'Explore more products for your home, business, restaurant, office, or shop. Add current prices and availability whenever inventory changes.',tvSectionTitle:'Televisions for every room and every budget',tvSectionText:'Give customers a clear view of available TV options and make it easy for them to ask for the latest price on WhatsApp.',tv32Title:'32” Smart LED TV',tv32Desc:'A compact smart TV that is perfect for bedrooms, small living rooms, offices, and student rooms.',tv43Title:'43” Full HD Smart TV',tv43Desc:'A popular size for families that want clear pictures, streaming apps, and great value.',tv55Title:'55” 4K Smart TV',tv55Desc:'A bigger screen experience for movies, football, gaming, and family entertainment.',tv65Title:'65” Premium 4K TV',tv65Desc:'A premium large-screen option for customers who want a cinema-style experience at home.',catTV:'Televisions',catAudio:'Audio',catFridge:'Refrigerators',catLaundry:'Laundry',catKitchen:'Kitchen',catCooling:'Cooling',tvTitle:'Smart TVs',tvDesc:'LED and smart televisions for home entertainment, offices, and shops.',speakerTitle:'Sound Systems',speakerDesc:'Speakers and home theater systems for powerful, clear sound.',fridgeTitle:'Refrigerators',fridgeDesc:'Reliable refrigerators for homes, stores, restaurants, and small businesses.',washTitle:'Washing Machines',washDesc:'Practical washing machines that save time and make laundry easier.',cookerTitle:'Cookers & Ovens',cookerDesc:'Kitchen appliances for easy, clean, and efficient cooking every day.',acTitle:'Air Conditioners',acDesc:'Cooling solutions for homes, shops, offices, and comfortable living spaces.',promiseTitle:'Our customer promise',promiseText:'Every customer matters. Every purchase matters. Every home deserves dependable appliances.',promise1Title:'Honest guidance',promise1Text:'We help you choose the product that fits your budget, space, and purpose.',promise2Title:'Trusted quality',promise2Text:'We focus on appliances designed for strong performance and long-lasting value.',promise3Title:'Easy contact',promise3Text:'Use WhatsApp, phone, or visit the store to get quick answers and current prices.',aboutTitle:'A professional online store that attracts more customers.',aboutText:'Today, many customers search online before visiting a store. This website helps Ben Home Appliance show products, build confidence, and turn online visitors into real buyers.',boxTitle:'More visibility. More trust. More sales.',boxText:'Display products, prices, promotions, location, WhatsApp contact, and store hours in one clean and professional place.',contactTitle:'Ready to upgrade your home?',contactText:'Contact Ben Home Appliance today for price, availability, delivery options, new arrivals, and special offers.',whatsappUs:'WhatsApp Us',callNow:'Call Now',storeLabel:'Store Name:',phoneLabel:'Phone/WhatsApp:',locationLabel:'Location:',locationText:'Add your store address here',hoursLabel:'Hours:',hoursText:'Monday - Saturday, 8:00 AM - 6:00 PM',footerText:'Quality you can trust. Prices you will love.',footer:'© 2026 Ben Home Appliance. All rights reserved.'},
+      fr:{topOffer:'Nouveaux arrivages disponibles — demandez le meilleur prix du jour.',topContact:'Appel / WhatsApp :',storeName:'Ben Home Appliance',navProducts:'Produits',navCategories:'Catégories',navWhy:'Pourquoi nous',navContact:'Contact',badge:'Congélateurs • Téléviseurs • Réfrigérateurs • Électroménager',heroTitle:'Équipez votre maison avec des appareils de qualité en toute confiance.',heroText:'Chez Ben Home Appliance, les clients trouvent des congélateurs et appareils électroménagers fiables à des prix raisonnables. Consultez les produits en ligne, choisissez ce qu’il vous faut et contactez-nous pour le prix actuel avant de passer en boutique.',viewProducts:'Voir les produits en vedette',whatsapp:'Contacter sur WhatsApp',trust1:'Produits de qualité',trust2:'Prix abordables',trust3:'Service local chaleureux',whyTitle:'Pourquoi acheter chez Ben Home Appliance ?',whyText:'Nous aidons les familles, boutiques, restaurants et entreprises à trouver des appareils pratiques, durables et prêts pour un usage quotidien.',feature1Title:'Des produits pour chaque besoin',feature1Text:'Du petit congélateur familial au grand stockage professionnel, chaque client peut trouver le bon modèle.',feature2Title:'Achetez en confiance',feature2Text:'Des photos claires, des descriptions utiles et un contact direct facilitent le choix avant de venir en boutique.',feature3Title:'Assistance rapide',feature3Text:'Demandez les prix, la disponibilité, la livraison et les promotions directement sur WhatsApp.',freezerTitle:'Congélateurs coffre Boch en vedette',freezerText:'Modèles fiables à congélation rapide pour la conservation, les boutiques, les restaurants et les entreprises.',p1Title:'Congélateur coffre compact',p2Title:'Congélateur coffre moyen',p3Title:'Grand congélateur coffre',p4Title:'Congélateur coffre commercial',fastFreeze:'Congélation rapide',lowEnergy:'Faible consommation d’énergie',smallSpace:'Parfait pour petits espaces',deepFreeze:'Performance de surgélation',lockKey:'Serrure et clé',familyUse:'Très bon pour la famille',largeStorage:'Grande capacité de stockage',tropicalDesign:'Conception tropicale',shopHome:'Idéal pour boutiques et maisons',extraLarge:'Très grande capacité',businessReady:'Stockage adapté au commerce',restaurants:'Idéal pour restaurants et magasins',pricePlaceholder:'Prix : à ajouter',askPrice:'Demander le prix',moreTitle:'Plus d’appareils disponibles chez Ben Home Appliance',moreText:'Découvrez plus de produits pour votre maison, votre commerce, votre restaurant, votre bureau ou votre boutique. Ajoutez les prix et disponibilités actuels selon l’évolution du stock.',tvSectionTitle:'Des téléviseurs pour chaque pièce et chaque budget',tvSectionText:'Présentez clairement les options de téléviseurs disponibles et facilitez la demande du prix actuel sur WhatsApp.',tv32Title:'Smart TV LED 32”',tv32Desc:'Une smart TV compacte, parfaite pour les chambres, petits salons, bureaux et chambres d’étudiants.',tv43Title:'Smart TV Full HD 43”',tv43Desc:'Une taille populaire pour les familles qui veulent une belle image, des applications de streaming et un bon rapport qualité-prix.',tv55Title:'Smart TV 4K 55”',tv55Desc:'Un écran plus grand pour les films, le football, les jeux et les moments en famille.',tv65Title:'Téléviseur 4K premium 65”',tv65Desc:'Une grande option premium pour les clients qui veulent une expérience cinéma à la maison.',catTV:'Téléviseurs',catAudio:'Audio',catFridge:'Réfrigérateurs',catLaundry:'Lessive',catKitchen:'Cuisine',catCooling:'Climatisation',tvTitle:'Smart TV',tvDesc:'Téléviseurs LED et smart TV pour maison, bureaux et boutiques.',speakerTitle:'Systèmes audio',speakerDesc:'Haut-parleurs et home cinéma pour un son puissant et clair.',fridgeTitle:'Réfrigérateurs',fridgeDesc:'Réfrigérateurs fiables pour maisons, boutiques, restaurants et petites entreprises.',washTitle:'Machines à laver',washDesc:'Machines pratiques qui font gagner du temps et facilitent la lessive.',cookerTitle:'Cuisinières et fours',cookerDesc:'Appareils de cuisine pour cuisiner facilement, proprement et efficacement.',acTitle:'Climatiseurs',acDesc:'Solutions de refroidissement pour maisons, boutiques, bureaux et espaces confortables.',promiseTitle:'Notre promesse client',promiseText:'Chaque client compte. Chaque achat compte. Chaque maison mérite des appareils fiables.',promise1Title:'Conseils honnêtes',promise1Text:'Nous vous aidons à choisir le produit adapté à votre budget, votre espace et votre besoin.',promise2Title:'Qualité de confiance',promise2Text:'Nous privilégions des appareils conçus pour une bonne performance et une valeur durable.',promise3Title:'Contact facile',promise3Text:'Utilisez WhatsApp, appelez ou passez en boutique pour obtenir rapidement les prix actuels.',aboutTitle:'Une boutique en ligne professionnelle qui attire plus de clients.',aboutText:'Aujourd’hui, beaucoup de clients cherchent d’abord en ligne avant de visiter une boutique. Ce site aide Ben Home Appliance à présenter ses produits, inspirer confiance et transformer les visiteurs en acheteurs.',boxTitle:'Plus de visibilité. Plus de confiance. Plus de ventes.',boxText:'Présentez les produits, prix, promotions, adresse, WhatsApp et horaires dans un espace propre et professionnel.',contactTitle:'Prêt à équiper votre maison ?',contactText:'Contactez Ben Home Appliance aujourd’hui pour les prix, disponibilités, options de livraison, nouveautés et offres spéciales.',whatsappUs:'Écrivez-nous sur WhatsApp',callNow:'Appeler maintenant',storeLabel:'Nom de la boutique :',phoneLabel:'Téléphone/WhatsApp :',locationLabel:'Adresse :',locationText:'Ajoutez l’adresse de votre boutique ici',hoursLabel:'Horaires :',hoursText:'Lundi - Samedi, 8h00 - 18h00',footerText:'La qualité en confiance. Des prix que vous allez aimer.',footer:'© 2026 Ben Home Appliance. Tous droits réservés.'},
+      ee:{topOffer:'Nu yeye le asime fifia — bia egbe ƒe asi nyui.',topContact:'Yɔ / WhatsApp:',storeName:'Ben Home Appliance',navProducts:'Nuwo',navCategories:'Nuwo ƒe hatsotso',navWhy:'Nu si ta mí',navContact:'Kadodo',badge:'Freezerwo • TVwo • Fridgewo • Aƒeme nuwo',heroTitle:'Trɔ wò aƒe ɖe edzi kple appliance nyui siwo dzi nàte ŋu aka ɖo.',heroText:'Le Ben Home Appliance, asitsalawo kpɔ freezer kple aƒeme nu siwo nye nyui le asi si sɔ gbɔ. Kpɔ nuwo le online, tia nu si hiã wò, eye nàdo ka kple mí be nànya asi yeye hafi nàva dɔdzikpɔƒe la.',viewProducts:'Kpɔ nu veviwo',whatsapp:'Do ka le WhatsApp dzi',trust1:'Nu nyuiwo',trust2:'Asi si sɔ gbɔ',trust3:'Dɔwɔwɔ nyui le du me',whyTitle:'Nu ka ta nàƒle nu le Ben Home Appliance?',whyText:'Míekpena ɖe ƒomewo, dɔdzikpɔƒewo, nuɖuƒewo kple businesswo ŋu be woakpɔ appliance siwo le ŋudɔ, xɔse, eye woate ŋu awɔ dɔ gbe sia gbe.',feature1Title:'Nuwo na hiahiã ɖesiaɖe',feature1Text:'Tso freezer sue na aƒe me va se ɖe storage gã na business me, asitsala ate ŋu akpɔ size kple model si sɔ.',feature2Title:'ƒle nu kple dziɖoɖo',feature2Text:'Foto klã, nutatawo, kple kadodo bɔbɔe ana wòatia nu hafi nàva dɔdzikpɔƒe.',feature3Title:'Kpekpeɖeŋu kabakaba',feature3Text:'Bia asi, nu si le asime, delivery kple promotionwo le WhatsApp dzi.',freezerTitle:'Boch freezer veviwo',freezerText:'Freezer siwo doa dzo kabakaba na nudodokpɔ, dɔdzikpɔƒe, nuɖuƒe kple businesswo.',p1Title:'Freezer sue',p2Title:'Freezer kpekpeme',p3Title:'Freezer gã',p4Title:'Business freezer',fastFreeze:'Do dzo kabakaba',lowEnergy:'Eɖua energy sue',smallSpace:'Enyo na teƒe suewo',deepFreeze:'Do dzo me nyuie',lockKey:'Serrure kple safui',familyUse:'Enyo na ƒome',largeStorage:'Teƒe gã na nudodokpɔ',tropicalDesign:'Tropical design',shopHome:'Enyo na dɔdzikpɔƒe kple aƒe',extraLarge:'Teƒe gã ŋutɔ',businessReady:'Enyo na business',restaurants:'Enyo na nuɖuƒe kple dɔdzikpɔƒewo',pricePlaceholder:'Asi: tsɔ kpe ɖe ŋu',askPrice:'Bia asi',moreTitle:'Appliance bubuwo le Ben Home Appliance',moreText:'Kpɔ appliance bubuwo na wò aƒe, business, nuɖuƒe, office alo dɔdzikpɔƒe. Tsɔ asi yeye kple nu si le asime kpe ɖe ŋu ne stock trɔ.',tvSectionTitle:'TVwo na xɔ ɖesiaɖe kple ga ɖesiaɖe',tvSectionText:'Fia TV siwo le asime nyuie eye na asitsalawo nate ŋu abia egbe ƒe asi le WhatsApp dzi bɔbɔe.',tv32Title:'32” Smart LED TV',tv32Desc:'Smart TV sue si nyo na bedroom, sitting room sue, office kple student room.',tv43Title:'43” Full HD Smart TV',tv43Desc:'Size si ƒomewo lɔ̃na, kple picture klã, streaming apps kple value nyui.',tv55Title:'55” 4K Smart TV',tv55Desc:'Screen gã na movie, football, game kple ƒome ƒe entertainment.',tv65Title:'65” Premium 4K TV',tv65Desc:'Screen gã premium na ame siwo di cinema experience le aƒe me.',catTV:'TVwo',catAudio:'Audio',catFridge:'Fridgewo',catLaundry:'Laundry',catKitchen:'Kitchen',catCooling:'Dzodzro',tvTitle:'Smart TVwo',tvDesc:'LED kple smart TVwo na aƒe, office kple dɔdzikpɔƒe.',speakerTitle:'Sound Systemwo',speakerDesc:'Speaker kple home theater na gbe sesẽ eye klã.',fridgeTitle:'Fridgewo',fridgeDesc:'Fridge siwo dzi woate ŋu aka ɖo na aƒe, dɔdzikpɔƒe, nuɖuƒe kple business suewo.',washTitle:'Washing Machinewo',washDesc:'Machine nyui siwo ana laundry nanɔ bɔbɔe eye woaɖe ɣeyiɣi ɖe dzi.',cookerTitle:'Cooker kple Ovenwo',cookerDesc:'Kitchen nuwo na nuɖaɖa bɔbɔe, dzadzɛ, eye nyuie.',acTitle:'Air Conditionerwo',acDesc:'Dzodzro na aƒe, dɔdzikpɔƒe, office kple teƒe siwo me amewo nɔna nyuie.',promiseTitle:'Míaƒe ŋugbedodo na asitsalawo',promiseText:'Asitsala ɖesiaɖe le vevie. Fefle ɖesiaɖe le vevie. Aƒe ɖesiaɖe hiã appliance si dzi woate ŋu aka ɖo.',promise1Title:'Aɖaŋuɖoɖo vavã',promise1Text:'Míakpe ɖe ŋuwò be nàtia nu si sɔ kple wò ga, teƒe, kple hiahiã.',promise2Title:'Quality si dzi woate ŋu aka ɖo',promise2Text:'Míedi appliance siwo wɔa dɔ nyuie eye woatsɔ vi vɛ le ɣeyiɣi didi me.',promise3Title:'Kadodo bɔbɔe',promise3Text:'Zã WhatsApp, phone alo va dɔdzikpɔƒe be nàkpɔ ŋuɖoɖo kple asi yeye kabakaba.',aboutTitle:'Online dɔdzikpɔƒe professional si hea asitsala geɖe vɛ.',aboutText:'Egbe la, asitsala geɖewo di nu le internet dzi gbã hafi woava dɔdzikpɔƒe. Website sia kpe ɖe Ben Home Appliance ŋu na woaɖe nuwo fia, atu dziɖoɖo, eye wòatrɔ visitorswo zu asitsalawo.',boxTitle:'Amewo akpɔ mi. Dziɖoɖo nadzi. Asitsatsa nadzi.',boxText:'Fia nuwo, asiwo, promotionwo, teƒe, WhatsApp kple dɔɣeyiɣi le teƒe professional ɖeka me.',contactTitle:'Èle klalo be yeatrɔ wò aƒe ɖe edzi?',contactText:'Do ka kple Ben Home Appliance egbe na asi, nu si le asime, delivery, nu yeye kple offer veviwo.',whatsappUs:'WhatsApp mí',callNow:'Yɔ fifia',storeLabel:'Dɔdzikpɔƒe ƒe ŋkɔ:',phoneLabel:'Phone/WhatsApp:',locationLabel:'Teƒe:',locationText:'Tsɔ dɔdzikpɔƒe ƒe address kpe ɖe afisia',hoursLabel:'Dɔɣeyiɣi:',hoursText:'Dzoɖa - Memleɖa, 8:00 AM - 6:00 PM',footerText:'Quality si dzi nàte ŋu aka ɖo. Asi si adze ŋuwò.',footer:'© 2026 Ben Home Appliance. Rights katã le asiwò.'}
+    };
+    function setLanguage(lang){document.querySelectorAll('[data-i18n]').forEach(el=>{const key=el.getAttribute('data-i18n');if(translations[lang]&&translations[lang][key])el.textContent=translations[lang][key];});document.documentElement.lang=lang==='ee'?'ee':lang;localStorage.setItem('siteLanguage',lang)}
+    const select=document.getElementById('languageSelect');select.addEventListener('change',e=>setLanguage(e.target.value));const saved=localStorage.getItem('siteLanguage')||'en';select.value=saved;setLanguage(saved);
+  </script>
 </body>
 </html>
